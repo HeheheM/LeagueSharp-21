@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -567,7 +567,7 @@ namespace Cassiopeia
             {
                 if (Q.IsReady() && (!harass || menu.Item("qHarass").GetValue<bool>()))
                 {
-                    if (Q.CastIfHitchanceEquals(enemy, HitChance.High, packetCast))
+                    if (Q.CastIfHitchanceEquals(enemy, HitChance.VeryHigh, packetCast))
                     {
                         castWafter = Game.Time + Q.Delay;
                         return;
